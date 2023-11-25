@@ -25,7 +25,8 @@ class GoodMoodRising(QMainWindow):
             qp.begin(self)
             pen = QBrush(self.color)
             qp.setBrush(pen)
-            qp.drawEllipse(150, 50, randint(0, 400), randint(0, 400))
+            size = randint(0, 400)
+            qp.drawEllipse(randint(0, 200), randint(0, 250), size, size)
             qp.end()
             self.draw = False
 
